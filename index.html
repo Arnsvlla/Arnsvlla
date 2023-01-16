@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/effd3867de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- background image in the center -->
+    <img src="images/l1.webp" alt="" class="body-bg">
+
+    <!-- nav  -->
+    <nav>
+        <img src="images/logo.png" alt="" onclick="returnHome()" class="logo">
+        <i class="fa-solid fa-bars" id="openMenu"></i>
+    </nav>
+    <div class="nav-links">
+        <i class="fa-solid fa-xmark" id="closeMenu"></i>
+        <a href="index.html">Home</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="procedure.html">Procedure</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <!-- header / landing page -->
+    <section class="mainpage">
+        <img src="images/mainpic.webp" alt="" class="frontpic" draggable="false">
+        <div class="title-container">
+            <p class="productName">Fermented Rice</p>
+            <div class="productName-extension">
+                <div class="productline"></div>
+                <p>with Shrimp</p>
+                <div class="productline"></div>
+            </div>
+            <p class="productDescription">
+                This product is one of a kind. Taste this Fermented Rice with Shrimp. <br>
+                With the scrumptious taste of this product, you’ll surely love it. 
+            </p>
+
+            <!-- <div class="line1"></div>
+            <div class="line2"></div> -->
+            <!-- <a href="introduction.html">Introduction</a> -->
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="smallCircle" id="social-circle"></div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-left-col">
+            <img src="images/buro.png" alt="">
+        </div>
+
+        <div class="about-right-col">
+            <p class="about-title">About</p>
+            <div class="about-line1"></div>
+            <div class="about-line2"></div>
+            <p class="about-description">
+                This fermented rice and shrimp condiment with a mixture of corn oil, garlic, ginger, tomato paste (red vinegar and chili, for the spicy variant) is great for dipping grilled, roasted or fried fish, and vegetables.
+            </p>
+
+            <div class="quote-container">
+                <p class="quote">
+                    Learning is not child's play, we cannot learn without pain.
+                </p>
+                <small>- Aristotle</small>
+            </div>
+        </div>
+    </section>
+    <section class="about-food">
+        <div class="about-food-box">
+            <img src="images/meal-plate.png" alt="">
+            <p>FOOD ATTRACTION</p>
+            <small>Our Special Buro is the one and only delicious in this town</small>
+        </div>
+        <div class="about-food-box">
+            <img src="images/ingredient-icon.png" alt="">
+            <p>FRESH INGREDIENTS</p>
+            <small>Our Ingredients is Fresh from over the land and sea</small>
+        </div>
+        <div class="about-food-box">
+            <img src="images/clock.png" alt="">
+            <p>ON TIME</p>
+            <small>We have time management here so we can cooked in time</small>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="left-contact">
+                <p class="contact-head">What's your story?</p>
+                <p class="contact-head">Get in touch</p>
+                <p class="contact-description">Always available for freelancing if the right project comes along,
+                    <br> Feel free to contact me.
+                </p>
+                <div class="contact-infoContainer">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>contactsupport@gmail.com</p>
+                </div>
+                <div class="contact-infoContainer">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+639912345678</p>
+                </div>
+            </div>
+            
+            <div class="right-contact">
+                <form onsubmit="return false">
+                    <div class="form-row1">
+                        <input type="text" class="input-name" placeholder="Name *">
+                        <input type="email" class="input-email" placeholder="Email *">
+                    </div>
+                    <input type="text" class="input-subject" placeholder="Subject *">
+                    <textarea cols="30" rows="5" placeholder="Your Message *"></textarea>
+                    <Button>Send Message</Button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-col">
+                <h3>Product</h3>
+                <p>Our Plan</p>
+                <p>Free Trial</p>
+            </div>
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Request Demo</p>
+                <p>FAQs</p>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <p>Features</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <p>Find a Nonprofit</p>
+                <p>Corporate Solution</p>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <small>Copyright 2023 - Arnsvlla - All Rights Reserved</small>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
